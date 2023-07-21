@@ -5,13 +5,13 @@
 }
 
 /* reset styles to delete later! */
-*{
-    padding: 0.5rem;
-    border: 1px solid rgb(220,220,220);
-}
+section { border: 1px solid rgb(220,220,220); }
 
-html { border: none; }
-body { border: none; }
+body {
+    font-family: 'catamaran', sans-serif;
+    color: #192B37;
+
+}
 
 /* image styles */
 .bg-image {
@@ -29,3 +29,7 @@ body { border: none; }
     background-color: #192B37;
     color: white;
 }
+
+.text-l { text-align: left; }
+.text-c { text-align: center; }
+.text-r { text-align: right; }
