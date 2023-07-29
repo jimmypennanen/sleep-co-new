@@ -2,6 +2,8 @@
 <html>
 <!------- stylesheet and external -------->
 <head> 
+
+    <title> the sleep co </title>
     <!-- fontawsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -17,15 +19,33 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!---------- header section ---------->
-    <header class="padded grid text-c tall-100">
+
+<!---------- nav header section ---------->    
+    <header class="grid-middle">
+        <div class="col-4">
+          <a href="#" class="logo">
+            <h2 class="margin-b-0"> LOGO </h2>
+          </a>  
+        </div>
+      
+        <nav class="col-8 text-r">
+          <a href="index.html"> Home </a>
+          <a href="about.html"> About </a>
+          <a href="services.html"> Services </a>
+          <a href="contact.html" class="nav-button"> Contact </a>
+        </nav>
+      </header>
+
+
+    <!---------- opening section ---------->
+    <section class="padded grid text-c tall-100 opening-section">
         <div class="col-12-middle">
             <h3 class="font-weight-extra-bold editable">
                 <span class="feat-text">sleep</span> like a baby
             </h3>
             <h1 class="font-weight-normal editable"> the ultimate mattress solution </h1>
         </div>
-    </header>
+    </section>
 
     <!---------- image column section ---------->
     <section class="grid">

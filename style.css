@@ -31,6 +31,8 @@ body {
 .padded-sm  { padding: 1rem; }
 .padded-lg  { padding: 10%; }
 
+.margin-b-0 { margin-bottom: 0;}
+
 .bg-dark {
     background-color: #192B37;
     color: white;
@@ -111,16 +113,49 @@ a:hover {
 
 
 /* header and footer styles */
+
 header {
+    padding: 0 5%;
+    border: 1px solid;
+  
+  }
+  
+  header a {
+    color: inherit;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  header a:hover {
+    color: rgb(180,180,180)
+  }
+  
+   .logo h2 {
+     font-size: 4rem;
+     font-weight: 300;
+  }
+  
+  .nav-button {
+    border: 2px solid;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+  }
+
+.opening-section {
     background-image: url('/img/the-sleep-co-new-4.jpg');
     background-size: cover;
     background-position: center;
 }
 
-header h3 {
+.opening-section h3 {
     font-size: 5.5rem;
     line-height: 1;
 }
+
 
 footer a {
     border: none;
