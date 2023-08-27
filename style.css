@@ -206,3 +206,11 @@ footer a {
     margin-bottom: 2rem;
     font-size: 3rem; 
 }
+
+/* buttons and forms */
+
+input,
+textarea {
+    width: 100%;
+    display: block;
+}
