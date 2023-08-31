@@ -11,7 +11,7 @@ navy - #192B37
     box-sizing: border-box;
 }
 
-
+img {max-width: 100%;}
 
 
 /* universal styles and utility classes */
@@ -21,57 +21,97 @@ body {
     color: #192B37;
 }
 
-.padded     { padding: 5%; }
-.padded-sm  { padding: 2.5%; }
-.padded-lg  { padding: 10%; }
 
-.padded-0   { padding: 0; }
-.padded-1   { padding: 1rem; }
-.padded-2   { padding: 2rem; }
+/* Padding Utility Classes */ 
+.padded-sm { padding: 2.5%; }
+.padded    { padding: 5%;   }
+.padded-lg { padding: 10%;  }
 
+.padded-0  { padding: 0; }
+.padded-05 { padding: 0.5rem; }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
 
+.padded-t  { padding-top: 5%; }
+.padded-b  { padding-bottom: 5%; }
+.padded-l  { padding-left: 5%; }
+.padded-r  { padding-right: 5%; }
 
-.margin-b-0 { margin-bottom: 0;}
+.padded-tb  { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr  { padding-left: 5%; padding-right: 5%; }
 
-.bg-dark {
-    background-color: #192B37;
-    color: white;
-}
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-right: 1rem; }
 
-.bg-feat {
-    background-color: #FFBE00;
-}
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-right: 2rem; }
 
-.bg-light {
-    background-color: #E3ECF2;
-}
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-right: 0; }
 
+/* Margin Utility Classes */ 
+
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+.tall-50    { min-height: 50vh; }
+.tall-60    { min-height: 60vh; }
+.tall-70    { min-height: 70vh; }
+.tall-80    { min-height: 80vh; }
+.tall-90    { min-height: 90vh; }
+.tall-100   { min-height: 100vh;}
 
 
 /* typography styles */
 
 h2, h3, h4, h5, h6 {
-    margin-bottom: 1rem;
-    line-height: 1.1;
+  line-height: 1.1;
+  margin-bottom: 1.2rem;
 }
-
-h2 { 
-    font-size: 2.5rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
-}
-
-h3 { line-height: 1;}
 
 p {
-    font-weight: 200;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+  line-height: 1.4; 
+  margin-bottom: 1rem;
+  font-weight: 200;
 }
 
+h2:last-child, 
+h3:last-child, 
+h4:last-child, 
+h5:last-child, 
+h6:last-child, 
 p:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
+
+
+h2 { font-size: 2.5rem;}
 
 a {
     color: inherit;
@@ -117,15 +157,6 @@ a:hover {
 .text-l { text-align: left; }
 .text-c { text-align: center; }
 .text-r { text-align: right; }
-
-
-.tall-50    { min-height: 50vh; }
-.tall-60    { min-height: 60vh; }
-.tall-70    { min-height: 70vh; }
-.tall-80    { min-height: 80vh; }
-.tall-90    { min-height: 90vh; }
-.tall-100   { min-height: 100vh;}
-
 
 /* header and footer styles */
 
@@ -176,12 +207,27 @@ footer a {
     border: none;
 }
 
+/* background styles */
+.bg-dark {
+    background-color: #192B37;
+    color: white;
+}
+
+.bg-feat {
+    background-color: #FFBE00;
+}
+
+.bg-light {
+    background-color: #E3ECF2;
+}
+
+
 /* image styles */
 .bg-image {
     background-image: url('/img/the-sleep-co-new-1.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 10rem;
+    background-repeat: no-repeat;
 }
 
 .landscape  {padding-bottom: 65%;}
@@ -199,6 +245,26 @@ footer a {
     background-position: 50% 57%;
 }
 
+/* video styles */
+.embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: 
+    hidden; 
+    max-width: 100%;
+ } 
+ 
+ .embed-container iframe,
+ .embed-container object, 
+ .embed-container embed { 
+     position: absolute; 
+     top: 0; 
+     left: 0; 
+     width: 100%; 
+     height: 100%; 
+}
+
 /* icon grid */
 .fa-solid, .fa-regular {
     display: block;
@@ -207,10 +273,113 @@ footer a {
     font-size: 3rem; 
 }
 
+
 /* buttons and forms */
 
 input,
 textarea {
     width: 100%;
     display: block;
+    margin-bottom: 0.4rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #FFBE00;
+    outline: none;
+}
+
+button {
+    padding: 0.5rem 2rem;
+    background-color: #FFBE00;
+    appearance: none;
+    border: 2px solid #FFBE00;
+    color: inherit;
+}
+
+
+
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+.show-xs, 
+.show-sm,
+.show-md {
+	display: none;
+}
+
+/* ------- MD Media Query (64em / 1024px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 64em) {
+  .show-md      { display: block; }
+  .hide-md      { display: none;  }
+
+  .md-tall-80   { min-height: 80vh; }
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+
+@media (max-width: 48em) {
+
+   html    { font-size: 14px;}
+   p       { font-size: 1.1rem;}
+
+  .show-sm { display: block; }
+  .hide-sm { display: none;  }
+	 
+  .sm-text-center   { text-align: center; }
+  .sm-text-left     { text-align: left; }
+  .sm-text-right    { text-align: right; }
+
+  .sm-padded        { padding: 5%; }
+  .sm-padded-1      { padding: 1rem; }
+  .sm-padded-05     { padding: 0.5rem; }
+
+  .sm-padded-t-0    { padding-top: 0; }
+  .sm-padded-b-0    { padding-bottom: 0; }
+  .sm-padded-l-0    { padding-left: 0; }
+  .sm-padded-r-0    { padding-right: 0; }
+  
+  .sm-margin-t-0    { margin-top: 0; }
+  .sm-margin-b-0    { margin-bottom: 0; }
+  .sm-margin-l-0    { margin-left: 0; }
+  .sm-margin-r-0    { margin-right: 0; }
+
+  .logo h2          { font-size: 2rem;}
+
+  .opening-section h3         { font-size: 11vw;}
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */ 
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+
+@media (max-width: 36em) {
+  .show-xs { display: block; }
+  .hide-xs { display: none;  }
+
+h1 { 
+    font-size: 1.4rem ;
+    line-height: 1.1;
+  }
+
+h2 {font-size: 2rem;}
+
+}
+
+/* ------- Optional XXS Media Query (25em / 400px) NOT part of default Gridlex styling--------------- */ 
+/* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
+
+@media (max-width: 25em) {
+
+    html    { font-size: 12px;}
+
+    [class*=grid] .xxs-stack {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
 }
