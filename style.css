@@ -154,9 +154,9 @@ a:hover {
 .font-weight-normal     { font-weight: normal;}
 .font-weight-extra-bold { font-weight: 800;}
 
-.text-l { text-align: left; }
-.text-c { text-align: center; }
-.text-r { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
 
 /* header and footer styles */
 
@@ -205,6 +205,13 @@ header {
 
 footer a {
     border: none;
+    display: inline-block;
+}
+
+.fa-brands {
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
 }
 
 /* background styles */
@@ -254,7 +261,7 @@ footer a {
     hidden; 
     max-width: 100%;
  } 
- 
+
  .embed-container iframe,
  .embed-container object, 
  .embed-container embed { 
@@ -359,15 +366,22 @@ button {
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
 @media (max-width: 36em) {
+    
+    
+  .xs-text-center   { text-align: center; }
+  .xs-text-left     { text-align: left; }
+  .xs-text-right    { text-align: right; }
+
+
   .show-xs { display: block; }
   .hide-xs { display: none;  }
 
-h1 { 
+   h1 { 
     font-size: 1.4rem ;
     line-height: 1.1;
   }
 
-h2 {font-size: 2rem;}
+   h2 {font-size: 2rem;}
 
 }
 
