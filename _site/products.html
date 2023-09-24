@@ -1,29 +1,44 @@
----
-layout: default
-icon:
- - heading: We Know
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere necessitatibus illum.
- - heading: What You
-   description: Maxime soluta voluptatum fugit quaerat ab nostrum, necessitatibus nisi?
- - heading: Really want
-   description: Corporis optio eaque, fugiat asperiores quam doloribus dignissimos accusamus quas hic ad cumque qui ratione beatae harum delectus.   
- - heading: In lifetime
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, veniam doloribus numquam.
-card:
- - heading: Standard
-   featured_image: /img/the-sleep-co-new-3.jpg
-   description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quia sed illo consequatur voluptatem totam est, nemo molestias, labore aliquid consectetur iusto odio fuga doloremque fugit sit. Expedita, beatae id.
- - heading: Gold 
-   featured_image: /img/the-sleep-co-new-2.jpg
-   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta voluptatum fugit quaerat ab nostrum, necessitatibus nisi? Adipisci cupiditate delectus fuga nam officiis libero dicta numquam ab quo. Vitae, voluptate.
- - heading: Platinum
-   featured_image: /img/the-sleep-co-new-1.jpg
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere necessitatibus illum. Corporis optio eaque, fugiat asperiores quam doloribus dignissimos accusamus quas hic ad cumque qui ratione beatae harum delectus.
----
+<!DOCTYPE html>
+<html>
+<!------- stylesheet and external -------->
+<head> 
 
-<!---------- nav header section ---------->    
+    <title> the sleep co </title>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    {% include header-nav.html %}
+    <!-- gridlex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+    <!-- viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- google fonts - catamaran -(200 400 500 800) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet" /> 
+
+    <!-- our own stylesheet. allways last in head -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!---------- nav header section ---------->    
+
+    <header class="grid-middle bg-feat">
+    <div class="col-5_sm-12 padded-0 sm-text-center">
+      <a href="index.html" class="logo">
+        <h2 class="margin-b-0"> LOGO </h2>
+      </a>  
+    </div>
+  
+    <nav class="col-7_sm-12 text-right padded-0 sm-text-center">
+      <a href="index.html"> Home </a>
+      <a href="about.html"> About </a>
+      <a href="products.html"> Products </a>
+      <a href="contact.html" class="nav-button"> Contact </a>
+    </nav>
+</header> 
   
     <!---------- header section ---------->
     <section class="padded grid text-center tall-60 opening-section">
@@ -42,31 +57,70 @@ card:
           <h2> <span class="white-text">features</span> you will love </h2>
       </div>
 
-      {% for item in page.icon %}
+      
       <div class="col-3_xs-6 xxs-stack padded-sm editable">
-          <h3> {{item.heading}} </h3>
-          <p> {{item.description}} </p>
+          <h3> We Know </h3>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere necessitatibus illum. </p>
       </div>
-      {% endfor %}
+      
+      <div class="col-3_xs-6 xxs-stack padded-sm editable">
+          <h3> What You </h3>
+          <p> Maxime soluta voluptatum fugit quaerat ab nostrum, necessitatibus nisi? </p>
+      </div>
+      
+      <div class="col-3_xs-6 xxs-stack padded-sm editable">
+          <h3> Really want </h3>
+          <p> Corporis optio eaque, fugiat asperiores quam doloribus dignissimos accusamus quas hic ad cumque qui ratione beatae harum delectus. </p>
+      </div>
+      
+      <div class="col-3_xs-6 xxs-stack padded-sm editable">
+          <h3> In lifetime </h3>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, veniam doloribus numquam. </p>
+      </div>
+      
   
     </section>
 
     <!-- cards section -->
     <section class="grid padded">
 
-      {% for item in page.card %}
+      
 
       <div class="col-4_sm-12 padded-sm">
         <div class="card">
-          <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
+          <div class="bg-image portrait" style="background-image: url('/img/the-sleep-co-new-3.jpg')"></div>
           <div class="padded-1">
-            <h3> {{ item.heading }} </h3>
-            <p> {{ item.description }} </p>
+            <h3> Standard </h3>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus quia sed illo consequatur voluptatem totam est, nemo molestias, labore aliquid consectetur iusto odio fuga doloremque fugit sit. Expedita, beatae id. </p>
           </div>
         </div>
       </div>
 
-      {% endfor %}
+      
+
+      <div class="col-4_sm-12 padded-sm">
+        <div class="card">
+          <div class="bg-image portrait" style="background-image: url('/img/the-sleep-co-new-2.jpg')"></div>
+          <div class="padded-1">
+            <h3> Gold </h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime soluta voluptatum fugit quaerat ab nostrum, necessitatibus nisi? Adipisci cupiditate delectus fuga nam officiis libero dicta numquam ab quo. Vitae, voluptate. </p>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-4_sm-12 padded-sm">
+        <div class="card">
+          <div class="bg-image portrait" style="background-image: url('/img/the-sleep-co-new-1.jpg')"></div>
+          <div class="padded-1">
+            <h3> Platinum </h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere necessitatibus illum. Corporis optio eaque, fugiat asperiores quam doloribus dignissimos accusamus quas hic ad cumque qui ratione beatae harum delectus. </p>
+          </div>
+        </div>
+      </div>
+
+      
 
     </section>
 
@@ -111,4 +165,20 @@ card:
 
       <!---------- footer footer footer  ---------->
 
-      {% include standard-footer.html %}
+          <!---------- footer footer footer  ---------->
+    <footer class="grid-center padded padded-b-1 bg-dark text-center font-weight-extra-bold">
+        <div class="col-8">
+            <h2>THE SLEEP CO</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nemo. Hic totam fugit dolorem, debitis, cumque quae atque, officia reiciendis facilis impedit animi voluptatibus. At voluptas quaerat esse quae quam.</p>
+        </div>
+        <div class="col-12">
+             <a href="#"> <i class="fa-brands fa-instagram"> </i> </a>
+             <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> 
+             <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

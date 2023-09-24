@@ -1,10 +1,44 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<!------- stylesheet and external -------->
+<head> 
 
-    <!---------- nav header section ---------->    
+    <title> the sleep co </title>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    {% include header-nav.html %}
+    <!-- gridlex -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+    <!-- viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- google fonts - catamaran -(200 400 500 800) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet" /> 
+
+    <!-- our own stylesheet. allways last in head -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+        <!---------- nav header section ---------->    
+
+    <header class="grid-middle bg-feat">
+    <div class="col-5_sm-12 padded-0 sm-text-center">
+      <a href="index.html" class="logo">
+        <h2 class="margin-b-0"> LOGO </h2>
+      </a>  
+    </div>
+  
+    <nav class="col-7_sm-12 text-right padded-0 sm-text-center">
+      <a href="index.html"> Home </a>
+      <a href="about.html"> About </a>
+      <a href="products.html"> Products </a>
+      <a href="contact.html" class="nav-button"> Contact </a>
+    </nav>
+</header> 
 
     <!---------- header section ---------->
     <section class="padded grid text-center tall-60 opening-section">
@@ -74,4 +108,20 @@ layout: default
   </section>
 
 
-   {% include standard-footer.html %}
+       <!---------- footer footer footer  ---------->
+    <footer class="grid-center padded padded-b-1 bg-dark text-center font-weight-extra-bold">
+        <div class="col-8">
+            <h2>THE SLEEP CO</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nemo. Hic totam fugit dolorem, debitis, cumque quae atque, officia reiciendis facilis impedit animi voluptatibus. At voluptas quaerat esse quae quam.</p>
+        </div>
+        <div class="col-12">
+             <a href="#"> <i class="fa-brands fa-instagram"> </i> </a>
+             <a href="#"> <i class="fa-brands fa-twitter"> </i> </a> 
+             <a href="#"> <i class="fa-brands fa-facebook-f"> </i> </a>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>
