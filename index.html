@@ -1,14 +1,34 @@
 ---
 layout: default
-featured: 
- - icon: fa-solid fa-bed
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis, quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate obcaecati! Eaque, harum.
- - icon: fa-solid fa-sun
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis, quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate obcaecati! Eaque, harum.
- - icon: fa-regular fa-moon
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis, quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate obcaecati! Eaque, harum.
- - icon: fa-solid fa-cloud
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis, quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate obcaecati! Eaque, harum.
+featured:
+   -
+      icon: fa-solid fa-bed
+      description: >-
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex
+         blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis,
+         quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate
+         obcaecati! Eaque, harum?
+   -
+      icon: fa-solid fa-sun
+      description: >-
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex
+         blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis,
+         quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate
+         obcaecati! Eaque, harum.
+   -
+      icon: fa-regular fa-moon
+      description: >-
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex
+         blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis,
+         quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate
+         obcaecati! Eaque, harum.
+   -
+      icon: fa-solid fa-cloud
+      description: >-
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex
+         blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis,
+         quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate
+         obcaecati! Eaque, harum.
 ---
 <!---------- nav header section ---------->  
 
@@ -52,7 +72,7 @@ featured:
 
         {% for item in page.featured %}
 
-        <div class="col-3_sm-6 xxs-stack padded-sm">
+        <div class="col-3_sm-6 xxs-stack padded-sm editable">
             <i class="{{item.icon}}"></i>
             <p>{{item.description}}</p>
         </div>
@@ -79,7 +99,7 @@ featured:
         <div class="col-12-middle">
             <h3 class="big-text">
                 <span class="small-text font-weight-normal"> never underestimate the power of </span> 
-                <br/> a good night <span class="white-text">sleep</span>
+                <br /> a good night <span class="white-text">sleep</span>
             </h3>
         </div>
     </section>
