@@ -1,5 +1,12 @@
 ---
 layout: default
+contact:
+   - icon: fa-solid fa-bed
+     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis,quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate obcaecati! Eaque, harum.
+   - icon: fa-solid fa-sun
+     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis, quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate obcaecati! Eaque, harum.
+   - icon: fa-regular fa-moon
+     description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex blanditiis nihil impedit magni consequatur, hic nam quibusdam corporis, quisquam repudiandae ipsam exercitationem totam, ea omnis cupiditate obcaecati! Eaque, harum.
 ---
 
 
@@ -49,18 +56,16 @@ layout: default
       <div class="col-12 padded-sm text-center"> 
           <h2> need help deciding? </h2>
       </div>
-      <div class="col-3_sm-12 padded-sm editable">
-          <i class="fa-solid fa-bed"></i>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex blanditiis nihil impedit magni.</p>
+
+      {% for item in page.contact %}
+
+      <div class="col-3_sm-12 padded-sm">
+          <i class="{{item.icon}}"></i>
+          <p>{{item.description}}</p>
       </div>
-      <div class="col-3_sm-12 padded-sm editable">
-          <i class="fa-solid fa-sun"></i>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex blanditiis nihil impedit magni.</p>
-      </div>
-      <div class="col-3_sm-12 padded-sm editable">
-          <i class="fa-regular fa-moon"></i>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ex blanditiis nihil impedit magni.</p>
-      </div>
+  
+      {% endfor %}
+
     </section>
 
     <!---------- testemonial section  ---------->

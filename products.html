@@ -5,9 +5,9 @@ icon:
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere necessitatibus illum.
  - heading: What You
    description: Maxime soluta voluptatum fugit quaerat ab nostrum, necessitatibus nisi?
- - heading: Really want
+ - heading: Really Want
    description: Corporis optio eaque, fugiat asperiores quam doloribus dignissimos accusamus quas hic ad cumque qui ratione beatae harum delectus.   
- - heading: In lifetime
+ - heading: In Bed
    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, veniam doloribus numquam.
 card:
  - heading: Standard
@@ -43,10 +43,11 @@ card:
       </div>
 
       {% for item in page.icon %}
-      <div class="col-3_xs-6 xxs-stack padded-sm editable">
+      <div class="col-3_xs-6 xxs-stack padded-sm">
           <h3> {{item.heading}} </h3>
           <p> {{item.description}} </p>
       </div>
+
       {% endfor %}
   
     </section>
