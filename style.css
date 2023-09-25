@@ -161,7 +161,7 @@ a:hover {
 /* header and footer styles */
 
 header {
-    padding: 0 5%;
+    padding: 2% 5%;
     border: 1px solid;
   
   }
@@ -181,7 +181,7 @@ header {
   }
   
    .logo h2 {
-     font-size: 4rem;
+     font-size: 5vw;
      font-weight: 300;
   }
   
@@ -189,6 +189,51 @@ header {
     border: 2px solid;
     border-radius: 3px;
     padding: 0.5rem 1rem;
+  }
+
+  .hamburger-button {
+    padding: 0.5rem;
+    cursor: pointer;
+    display: inline-block; 
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 0.7;
+    position: fixed;
+    top: 0.8rem;
+    right: 1rem;
+    z-index: 2;
+  }
+
+  .fa-solid.fa-bars { font-size: 2.5rem;}
+
+ .hamburger-button.active {
+    color: white;
+  }
+  
+  .mobile-meny {
+    display: none;
+    background-color: #FFBE00;
+    padding: 5%;
+    position: fixed;
+    top: 0;
+    bottom: 0%;
+    left: 0%;
+    right: 0;
+    text-align: center;
+  }
+  
+  .mobile-meny a {
+    color: inherit;
+    text-decoration: none;
+    padding: 4vh 5%;
+    display: block;
+    margin: 2rem;
+    border:none;
+    font-size: 1.8rem;
+  }
+
+  .mobile-meny a:hover {
+    color: white;
   }
 
 .opening-section {
@@ -395,6 +440,7 @@ button {
    h2 {font-size: 2rem;}
 
 }
+
 
 /* ------- Optional XXS Media Query (25em / 400px) NOT part of default Gridlex styling--------------- */ 
 /* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
