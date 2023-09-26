@@ -171,7 +171,7 @@ header {
     text-decoration: none;
     border: none;
     display: inline-block;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 0.5rem;
     margin-right: 0.5rem;
   }
@@ -259,6 +259,9 @@ footer a {
     margin: 0.5rem;
 }
 
+/* gallery styles */
+.gallery [class*="col-"] { padding: 0.5%; }
+
 /* background styles */
 .bg-dark {
     background-color: #192B37;
@@ -280,11 +283,26 @@ footer a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: rgb(240,240,240);
+    
 }
 
-.landscape  {padding-bottom: 65%;}
-.portrait   {padding-bottom: 125%;}
-.square     {padding-bottom: 100%;}
+.portrait-tall      { padding-bottom: 175%;  }
+.portrait           { padding-bottom: 125%;  }
+.square             { padding-bottom: 100%;  }
+.landscape          { padding-bottom: 66%;   }
+.landscape-wide     { padding-bottom: 40%;   }
+.portrait-a         { padding-bottom: 134%;  }
+
+/* Background Position */
+
+.bg-pos-t   { background-position: top;     }
+.bg-pos-b   { background-position: bottom;  }
+.bg-pos-l   { background-position: left;    }
+.bg-pos-r   { background-position: right;   }
+
+.bg-pos-t-l { background-position: 10% 10%; }
+.bg-pos-b-r { background-position: 50% 75%; }
 
 /* background images */
 .bg-lamp { background-image: url("/img/the-sleep-co-new-3.jpg");}
