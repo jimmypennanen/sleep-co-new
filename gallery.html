@@ -2,28 +2,28 @@
 layout: default
 gallery:
  -  col-size: col-12
-    aspect: landscape-wide
+    aspect-ratio: landscape-wide
     background_image: /img/the-sleep-co-new-3.jpg
  -  col-size: col-4
-    aspect: square
+    aspect-ratio: square
     background_image: /img/the-sleep-co-new-1.jpg
  -  col-size: col-4
-    aspect: square
+    aspect-ratio: square
     background_image: /img/the-sleep-co-new-2.jpg
  -  col-size: col-4
-    aspect: square
+    aspect-ratio: square
     background_image: /img/the-sleep-co-new-4.jpg
  -  col-size: col-6
-    aspect: portrait
+    aspect-ratio: portrait
     background_image: /img/the-sleep-co-new-1.jpg
  -  col-size: col-6
-    aspect: portrait
+    aspect-ratio: portrait
     background_image: /img/the-sleep-co-new-3.jpg
  -  col-size: col-12
-    aspect: landscape-wide
+    aspect-ratio: landscape-wide
     background_image: /img/the-sleep-co-new-4.jpg
  -  col-size: col-12
-    aspect: landscape-wide
+    aspect-ratio: landscape-wide
     background_image: /img/the-sleep-co-new-2.jpg
 ---
 
@@ -45,7 +45,7 @@ gallery:
             {% for item in page.gallery %}
 
             <div class="{{item.col-size}}">
-                <div class="bg-image {{item.aspect}}"
+                <div class="bg-image {{item.aspect-ratio}}"
                 style="background-image: url('{{item.background_image}}');">
                 </div>
             </div>
