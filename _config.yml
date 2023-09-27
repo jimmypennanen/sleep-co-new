@@ -1,6 +1,6 @@
 
 _select_data:
-  aspects:
+  aspect:
     - square
     - portrait
     - portrait-tall
