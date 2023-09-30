@@ -37,6 +37,24 @@ gallery:
         </div>
     </section>
 
+    <!------- popup gallery  -------->
+
+    <section class="padded">
+      <div class="grid gallery" id="lightgallery">
+
+        {% for item in page.gallery %}
+  
+        <a class="{{item.col-size}}"  href="{{item.background_image}}">
+          <div class="bg-image {{item.aspect-ratio}} {{item.background_image}}"
+          style="background-image: url('{{item.background_image}}');"> 
+         </div>
+        </a>
+
+        {% endfor %}
+
+     </div>
+     </section>
+
 
     <!--------------- galler section --------------->
     <section class="padded">
