@@ -191,6 +191,16 @@ header {
     padding: 0.5rem 1rem;
   }
 
+  .button {
+    border: 2px solid;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    color:#192B37;
+    background-color: white;
+  }
+
+
+
   .hamburger-button {
     padding: 0.5rem;
     cursor: pointer;
@@ -261,6 +271,15 @@ footer a {
 
 /* gallery styles */
 .gallery [class*="col-"] { padding: 0.5%; }
+
+.gallery .gallery-item { border: none;}
+
+/* background of gallery when active */
+.lg-backdrop { background-color: rgb(60, 60, 60); }
+
+.lg-backdrop.in { opacity: 0.8; }
+
+.lg-sub-html { background-color: rgba(60, 60, 60, 0.8);}
 
 /* background styles */
 .bg-dark {
