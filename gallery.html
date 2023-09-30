@@ -40,24 +40,38 @@ gallery:
     <!------- popup gallery  -------->
 
     <section class="padded">
-      <div class="grid gallery" id="lightgallery">
+      <h2> Popup gallery </h2>
+      <div class="gallery grid" id="lightgallery">
 
-        {% for item in page.gallery %}
+          {% for item in page.gallery %}
+        
+            <a class="{{item.col-size}} gallery-item" href="{{item.background_image}}">
+              <div class="bg-image {{item.aspect-ratio}}" 
+                  style="background-image: url('{{item.background_image}}');">
+              </div>
+            </a> 
+        
+          {% endfor %}
+
+        <!-- {% for item in page.gallery %}
   
-        <a class="{{item.col-size}}"  href="{{item.background_image}}">
+        <a class="{{item.col-size}}" href="{{item.background_image}}">
+
           <div class="bg-image {{item.aspect-ratio}} {{item.background_image}}"
           style="background-image: url('{{item.background_image}}');"> 
          </div>
+
         </a>
 
-        {% endfor %}
+        {% endfor %} -->
 
      </div>
      </section>
 
 
-    <!--------------- galler section --------------->
+    <!--------------- gallery section --------------->
     <section class="padded">
+        <h2> Standard gallery </h2>
         <div class="grid gallery">
 
             {% for item in page.gallery %}
