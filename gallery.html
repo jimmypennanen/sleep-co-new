@@ -1,30 +1,40 @@
 ---
 layout: default
+popup-gallery: true
+gallery-background: bg-dark
 gallery:
  -  col-size: col-12
     aspect-ratio: landscape-wide
     background_image: /img/the-sleep-co-new-3.jpg
+    type: defens
  -  col-size: col-4
     aspect-ratio: square
     background_image: /img/the-sleep-co-new-1.jpg
+    type: defens
  -  col-size: col-4
     aspect-ratio: square
     background_image: /img/the-sleep-co-new-2.jpg
+    type: wing
  -  col-size: col-4
     aspect-ratio: square
     background_image: /img/the-sleep-co-new-4.jpg
+    type: wing
  -  col-size: col-6
     aspect-ratio: portrait
     background_image: /img/the-sleep-co-new-1.jpg
+    type: wing
  -  col-size: col-6
     aspect-ratio: portrait
     background_image: /img/the-sleep-co-new-3.jpg
+    type: goalie
  -  col-size: col-12
     aspect-ratio: landscape-wide
     background_image: /img/the-sleep-co-new-4.jpg
+    type: goalie
  -  col-size: col-12
     aspect-ratio: landscape-wide
     background_image: /img/the-sleep-co-new-2.jpg
+    type: goalie
 ---
 
     <!---------- header section ---------->
@@ -39,48 +49,30 @@ gallery:
 
     <!------- popup gallery  -------->
 
-    <section class="padded">
+    {% if page.popup-gallery == true %}
+
+    <section class="padded {{page.gallery-background}}">
       <h2> Popup gallery </h2>
       <div class="gallery grid" id="lightgallery">
 
           {% for item in page.gallery %}
+          {% if item.type == 'wing' or item.type == 'defens' or item.type == 'goalie' %}
         
             <a class="{{item.col-size}} gallery-item" href="{{item.background_image}}">
               <div class="bg-image {{item.aspect-ratio}}" 
                   style="background-image: url('{{item.background_image}}');">
               </div>
             </a> 
-        
+
+          {% endif %}
           {% endfor %}
 
      </div>
      </section>
 
-<!------- popup gallery 2  -------->
-
-    <section class="padded">
-      <h2> Popup gallery 2 </h2>
-      <div class="gallery grid" id="lightgallery-2">
-
-        
-            <a class="button" href="/img/the-sleep-co-new-1.jpg" title="img-1">
-              view our work
-            </a> 
-            <a href="/img/the-sleep-co-new-2.jpg" title="img-2"> </a> 
-            <a href="/img/the-sleep-co-new-3.jpg" title="img-3"> </a>
-            <a href="/img/the-sleep-co-new-4.jpg" title="img-4"> </a>
-            <a href="/img/the-sleep-co-new-1.jpg" title="img-1"> </a>
-            <a href="/img/the-sleep-co-new-2.jpg" title="img-2"> </a>
-            <a href="/img/the-sleep-co-new-3.jpg" title="img-3"> </a>
-            <a href="/img/the-sleep-co-new-4.jpg"t itle="img-4"> </a>
-        
-
-     </div>
-     </section>
-    
-
+    {% else %}
     <!--------------- gallery section --------------->
-    <section class="padded">
+    <section class="padded {{page.gallery-background}}">
         <h2> Standard gallery </h2>
         <div class="grid gallery">
 
@@ -98,5 +90,30 @@ gallery:
           
           </div>
     </section>
+
+    {% endif %}
+
+    <!------- popup gallery 2  -------->
+
+    <!-- <section class="padded">
+      <h2> Popup gallery 2 </h2>
+      <div class="gallery grid" id="lightgallery-2">
+
+        
+            <a class="button" href="/img/the-sleep-co-new-1.jpg" title="img-1">
+              view our work
+            </a> 
+            <a href="/img/the-sleep-co-new-2.jpg" title="img-2"> </a> 
+            <a href="/img/the-sleep-co-new-3.jpg" title="img-3"> </a>
+            <a href="/img/the-sleep-co-new-4.jpg" title="img-4"> </a>
+            <a href="/img/the-sleep-co-new-1.jpg" title="img-1"> </a>
+            <a href="/img/the-sleep-co-new-2.jpg" title="img-2"> </a>
+            <a href="/img/the-sleep-co-new-3.jpg" title="img-3"> </a>
+            <a href="/img/the-sleep-co-new-4.jpg"t itle="img-4"> </a>
+        
+
+     </div>
+     </section> -->
+    
 
     {% include standard-footer.html %}
