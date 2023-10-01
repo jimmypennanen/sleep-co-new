@@ -1,6 +1,8 @@
 ---
 layout: default
 popup-gallery: true
+popup-gallery-2: false 
+popup-gallery-3: false
 gallery-background: bg-dark
 gallery:
  -  col-size: col-12
@@ -70,7 +72,7 @@ gallery:
      </div>
      </section>
 
-    {% else %}
+    {% elsif page.popup-gallery-2 == true %}
     <!--------------- gallery section --------------->
     <section class="padded {{page.gallery-background}}">
         <h2> Standard gallery </h2>
@@ -91,12 +93,11 @@ gallery:
           </div>
     </section>
 
-    {% endif %}
+    {% elsif page.popup-gallery-3 == true %}
+        <!------- popup gallery 2  -------->
 
-    <!------- popup gallery 2  -------->
-
-    <!-- <section class="padded">
-      <h2> Popup gallery 2 </h2>
+    <section class="padded">
+      <h2> Popup gallery 3 </h2>
       <div class="gallery grid" id="lightgallery-2">
 
         
@@ -113,7 +114,11 @@ gallery:
         
 
      </div>
-     </section> -->
+     </section>
     
+
+    {% endif %}
+
+
 
     {% include standard-footer.html %}
