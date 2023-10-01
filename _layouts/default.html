@@ -12,6 +12,18 @@
 
 {{content}}
 
+
+<!-- footer footer footer -->
+{% if page.my_variable %}
+
+  {% include {{ page.my_variable }} %}
+
+{% else %}
+
+    {% include standard-footer.html %}
+
+{% endif %}
+
     <!----------------------------------- script tags  ----------------------------------->
 
 {% include body-scripts.html %}
