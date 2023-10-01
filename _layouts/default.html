@@ -3,79 +3,18 @@
 <!------- stylesheet and external -------->
 <head> 
 
-    <title> the sleep co </title>
-    <!-- fontawsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- gridlex -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
-
-    <!-- viewport meta tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- google fonts - catamaran -(200 400 500 800) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet" /> 
-
-    <!-- animate on scroll css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- lightgallery popup -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.1.8/css/lightgallery-bundle.min.css" integrity="sha512-7xAjdVc23n18sYEAZKa79271IRUS1XzylIyJ8feyXvjrbbr4oId92993EiGTAP63Ob6KplRnmbNmBOg6bpLjYw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- our own stylesheet. allways last in head -->
-    <link rel="stylesheet" href="style.css" />
-
+{% include head.html %}
 
 </head>
 <body>
-    <header class="grid-middle bg-feat">
-        <div class="col-5_sm-11 padded-0">
-          <a href="index.html" class="logo">
-            <h2 class="margin-b-0"> THE SLEEP CO </h2>
-          </a>  
-        </div>
-      
-        <nav class="col-7_sm-12 text-right padded-0 hide-sm sm-text-center">
-            <a href="index.html"> Home </a>
-            <a href="about.html"> About </a>
-            <a href="products.html"> Products </a>
-            <a href="gallery.html"> Gallery </a>
-            <a href="contact.html" class="nav-button"> Contact </a>
-        </nav>
-    
-        <div class="col-1 show-sm">
-            <div class="hamburger-button"> 
-              <i class="fa-solid fa-bars"></i>
-            </div>
-        </div>
-    
-    </header> 
-    
-    <nav class="mobile-meny">
-        <a href="index.html"> Home </a>
-        <a href="about.html"> About </a>
-        <a href="products.html"> Products </a>
-        <a href="gallery.html"> Gallery </a>
-        <a href="contact.html"> Contact </a>
-    </nav>
-    
+   
+{% include header-nav.html %}
 
-    {{content}}
+{{content}}
 
     <!----------------------------------- script tags  ----------------------------------->
-    <!-- add jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- animate on scroll JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- lightgallery popupp  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
-  
-    <!-- custom javascript -->
-    <script src="script.js"></script>
+{% include body-scripts.html %}
 
      <!----------------------------------- end script tags  ----------------------------------->
 
