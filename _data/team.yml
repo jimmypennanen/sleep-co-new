@@ -1,17 +1,32 @@
 
 team-members:
- - name: Perti
+ - name: Pertti
    title: CEO
    team: Executive
-   profile_image: 
+   profile_image: /img/profile-4.jpeg
    
  - name: Pirjo
    title: Manager
    team: Executive
-   profile_image:
+   profile_image: /img/profile-3.jpg
   
  - name: Pabben
    title: Creative Director
+   team: Marketing 
+   profile_image: /img/profile-1.jpeg
+
+ - name: Tertti
+   title: Senior advisor
+   team: Executive
+   profile_image:
+   
+ - name: Tirjo
+   title: Senior advisor
+   team: Executive
+   profile_image:
+  
+ - name: Pennanen
+   title: Janitor
    team: Marketing 
    profile_image:
    
