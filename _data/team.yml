@@ -1,0 +1,15 @@
+team-members:
+  - name: Perti
+	  title: CEO
+	  team: Executive
+    profile_image: /img/the-sleep-co-new-3.jpg
+	
+  - name: Pirjo
+	  title: Manager
+  	team: Executive
+    profile_image: /img/the-sleep-co-new-3.jpg
+	
+  - name: Pabben
+  	title: Creative Director
+  	team: Marketing 
+    profile_image: /img/the-sleep-co-new-3.jpg

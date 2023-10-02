@@ -75,5 +75,24 @@ help:
 
     </section>
 
+        <!-- cards section -->
+        <section class="grid padded">
+
+          {{% for person in site.data.team.team-members %}
+    
+          <div class="col-4_sm-12 padded-sm">
+            <div class="card">
+              <div class="bg-image portrait" style="background-image: url('{{person.profile_image}}')"></div>
+              <div class="padded-1">
+                <h2> {{ person.name }} </h2>
+                <h3> {{ person.title }} </h3>
+              </div>
+            </div>
+          </div>
+    
+          {% endfor %}
+    
+        </section>
+
 
    
