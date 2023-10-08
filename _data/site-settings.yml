@@ -1,6 +1,6 @@
 design:
-  feat_color: '#FFBE00'
-  dark_color: '#192B37'
-  subtle_color: 'rgb(120, 120, 125)' 
-  light_color: '#E3ECF2'
-  white_color: 'white'
+  feat_color: '#ffbe00'
+  dark_color: '#192b37'
+  subtle_color: '#78787d'
+  light_color: '#e3ecf2'
+  white_color: '#ffffff'
