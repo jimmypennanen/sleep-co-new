@@ -13,11 +13,7 @@ navy - #192B37
 
 img {max-width: 100%;}
 
-:root {
-  --feat: #FFBE00;
-  --dark: #192B37;
-  --subtle: rgb(120, 120, 125);
-}
+
 
 
 
@@ -132,7 +128,7 @@ a:hover {
     
 
 .feat-text  { color: var(--feat);}
-.white-text { color: white}  
+.white-text { color: var(--white);} 
 
 
 .small-text { font-size: 1.5rem;}
@@ -147,13 +143,13 @@ a:hover {
 
 .subtitle  {
     font-size: 1.2rem;
-    color: rgb(120, 120, 125)
+    color: var(--subtle);
 }
 
 .quote-icon {
     font-size: 6rem;
     display: inline-block;
-    color: rgb(120, 120, 125);
+    color: var(--subtle);
     line-height: 1;
 }
 
@@ -203,7 +199,7 @@ header {
     border-radius: 3px;
     padding: 0.5rem 1rem;
     color: var(--dark);
-    background-color: white;
+    background-color: var(--white); 
   }
 
 
@@ -224,7 +220,7 @@ header {
   .fa-solid.fa-bars { font-size: 2.5rem;}
 
  .hamburger-button.active {
-    color: white;
+    color: var(--white); 
   }
   
   .mobile-meny {
@@ -250,7 +246,7 @@ header {
   }
 
   .mobile-meny a:hover {
-    color: white;
+    color: var(--white); 
   }
 
 .opening-section {
@@ -291,7 +287,7 @@ footer a {
 /* background styles */
 .bg-dark {
     background-color: var(--dark);;
-    color: white;
+    color: var(--white);
 }
 
 .bg-feat {
@@ -299,8 +295,9 @@ footer a {
 }
 
 .bg-light {
-    background-color: #E3ECF2;
-}
+    background-color: var(--light);
+  } 
+
 
 
 /* image styles */
@@ -372,11 +369,11 @@ footer a {
 /* card styles */
 
 .card {
-    border: 2px solid #E3ECF2;
+    border: 2px solid var(--light);
 }
 
 .card:hover {
-    border: 2px solid #E3ECF2;
+    border: 2px solid var(--light);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
