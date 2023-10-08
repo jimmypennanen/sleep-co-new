@@ -13,6 +13,13 @@ navy - #192B37
 
 img {max-width: 100%;}
 
+:root {
+  --feat: #FFBE00;
+  --dark: #192B37;
+  --subtle: rgb(120, 120, 125);
+}
+
+
 
 /* universal styles and utility classes */
 
@@ -120,11 +127,11 @@ a {
 }
 
 a:hover {
-    color: #FFBE00;
+    color: var(--feat);
 }
     
 
-.feat-text  { color: #FFBE00}
+.feat-text  { color: var(--feat);}
 .white-text { color: white}  
 
 
@@ -222,7 +229,7 @@ header {
   
   .mobile-meny {
     display: none;
-    background-color: #FFBE00;
+    background-color: var(--feat);
     padding: 5%;
     position: fixed;
     top: 0;
@@ -288,7 +295,7 @@ footer a {
 }
 
 .bg-feat {
-    background-color: #FFBE00;
+    background-color: var(--feat);
 }
 
 .bg-light {
@@ -388,15 +395,15 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border: 2px solid #FFBE00;
+    border: 2px solid var(--feat);
     outline: none;
 }
 
 button {
     padding: 0.5rem 2rem;
-    background-color: #FFBE00;
+    background-color: var(--featured);
     appearance: none;
-    border: 2px solid #FFBE00;
+    border: 2px solid var(--featured);
     color: inherit;
 }
 
