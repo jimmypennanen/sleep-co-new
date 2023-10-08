@@ -25,7 +25,7 @@ img {max-width: 100%;}
 
 body {
     font-family: 'catamaran', sans-serif;
-    color: #192B37;
+    color: var(--dark);
 }
 
 
@@ -202,7 +202,7 @@ header {
     border: 2px solid;
     border-radius: 3px;
     padding: 0.5rem 1rem;
-    color:#192B37;
+    color: var(--dark);
     background-color: white;
   }
 
@@ -290,7 +290,7 @@ footer a {
 
 /* background styles */
 .bg-dark {
-    background-color: #192B37;
+    background-color: var(--dark);;
     color: white;
 }
 
@@ -401,9 +401,9 @@ textarea:focus {
 
 button {
     padding: 0.5rem 2rem;
-    background-color: var(--featured);
+    background-color: var(--feat);
     appearance: none;
-    border: 2px solid var(--featured);
+    border: 2px solid var(--feat);
     color: inherit;
 }
 
